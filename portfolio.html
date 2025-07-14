@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #f5f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #003049;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.1em;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      background: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      color: #0077b6;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #90e0ef;
+      color: #023047;
+      padding: 6px 12px;
+      margin: 6px 6px 0 0;
+      border-radius: 20px;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Teena S</h1>
+    <p>Computer Science and Engineering Student </p>
+  </header>
+
+  <div class="container">
+    
+    <!-- Education -->
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>B.E in Computer Science and Engineering</strong> – K.S.R College of Engineering<br>
+          CGPA: <strong>9.26/10</strong>
+        </li>
+        <li>
+          <strong>Higher Secondary</strong> – Avvai Mat Hr Sec School <br>
+          Percentage: <strong>93%</strong>
+        </li>
+       
+      </ul>
+    </div>
+
+    <!-- Internships -->
+    <div class="section">
+      <h2>Internships</h2>
+      <ul>
+        <li><strong>Web Development Intern</strong> – CubeAI Tech Solutions </li>
+        <li><strong>Cloud Computing Intern</strong> – Thiran360AI Corp </li>
+      </ul>
+    </div>
+
+   
+    <div class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Personal Portfolio Website</strong><br>Created a responsive personal website using HTML, CSS</li>
+        <li><strong>Snake Game</strong><br>Built a Snake Game project using Python</li>
+        <li><strong>Cross The Road Game</strong><br>Created a road-crossing Game using Pyhton Turtle Module</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>NPTEL-Cloud Computing</li>
+        <li>Hackathon-Sona College Of Technology</li>
+        <li>Codathon-KSRCE</li>
+      </ul>
+    </div>
+
+    <div class="section skills">
+      <h2>Skills</h2>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Python</span>
+      <span>SQL</span>
+      <span>C</span>
+      <span>Java</span>
+     
+    </div>
+
+  </div>
+
+</body>
+</html>
