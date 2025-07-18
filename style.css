@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  background-image: url('https://cdn.wallpapersafari.com/94/17/HzhrXn.jpg');
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+li.done span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-btn {
+  color: red;
+  cursor: pointer;
+  font-size: 18px;
+}
