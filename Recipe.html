@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Flash Cards</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #fefefe;
+      margin: 0;
+      padding: 20px;
+      overflow-y: scroll;
+      height: 100vh;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .food-card {
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .food-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .food-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .food-name {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🍽️ Recipe Cards</h1>
+  <div class="gallery">
+    <a href="recipe1.html" class="food-card">
+      <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/butter-chicken.jpg" alt="ButterChicken">
+      <div class="food-name">Butter Chicken</div>
+    </a>
+    <a href="recipe2.html" class="food-card">
+      <img src="https://th.bing.com/th/id/OIP.C2tJI99xLVRDqgJHRYjxtwHaFj?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="BiriryaniVeg">
+      <div class="food-name">Vegetable Biriyani</div>
+    </a>
+    <a href="recipe3.html" class="food-card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.f18LT3P6bdNbLsmLoBXUzgHaFj?w=1613&h=1210&rs=1&pid=ImgDetMain&o=7&rm=3" alt="PalakPaneer">
+      <div class="food-name">Palak Paneer</div>
+    </a>
+    <a href="recipe4.html" class="food-card">
+      <img src="https://www.funfoodfrolic.com/wp-content/uploads/2020/07/Gulab-Jamun-Thumbnail.jpg" alt="GulabJamun">
+      <div class="food-name">Gulab Jamun</div>
+    </a>
+    <a href="recipe5.html" class="food-card">
+      <img src="https://www.masala.tv/wp-content/uploads/2017/05/Kesar_Pista_Kulfi_Recipe_Indian_Ice_Cream-1-2.jpg" alt="Kulfi">
+      <div class="food-name">Kulfi</div>
+    </a>
+    <a href="recipe6.html" class="food-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.AG-TUfRh8U0b8u_4xW3k6AHaHa?w=1080&h=1080&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Halwa">
+      <div class="food-name">Halwa</div>
+    </a>
+    <a href="masaladosa.html" class="food-card">
+      <img src="https://ranveerbrar.com/wp-content/uploads/2021/02/Masala-dosa-scaled.jpg" alt="Masala Dosa">
+      <div class="food-name">Masala Dosa</div>
+    </a>
+    <a href="dalmakhani.html" class="food-card">
+      <img src="https://recipes.timesofindia.com/thumb/53097626.cms?imgsize=156015&width=800&height=800" alt="Dal Makhani">
+      <div class="food-name">Dal Makhani</div>
+    </a>
+    <a href="matarmushroom.html" class="food-card">
+      <img src="https://greenbowl2soul.com/wp-content/uploads/2019/10/Matar-mushroom-500x500.jpg" alt="Matar Mushroom">
+      <div class="food-name">Matar Mushroom</div>
+    </a>
+    <a href="rasgulla.html" class="food-card">
+      <img src="https://images.slurrp.com/prod/recipe_images/transcribe/dessert/Rasgulla.webp" alt="Rasgulla">
+      <div class="food-name">Rasgulla</div>
+    </a>
+    <a href="jalebi.html" class="food-card">
+      <img src="https://th.bing.com/th/id/R.ebf00c0df8d033eb4559c63ea9ef9e81?rik=VvS6gp3VYXWDLQ&riu=http%3a%2f%2frecipes.timesofindia.com%2fphoto%2f53099699.cms&ehk=6a4KDqN4ldnVGme4C5ujN3oarGD%2boXp27I8zyCyux%2b4%3d&risl=&pid=ImgRaw&r=0" alt="Jalebi">
+      <div class="food-name">Jalebi</div>
+    </a>
+    <a href="kajukatli.html" class="food-card">
+      <img src="https://images.healthshots.com/healthshots/en/uploads/2024/10/30172142/kaju-katli-sweets.jpg" alt="Kaju Katli">
+      <div class="food-name">Kaju Katli</div>
+    </a>
+    <a href="mixvegcurry.html" class="food-card">
+      <img src="https://i1.wp.com/cookingfromheart.com/wp-content/uploads/2019/04/Restaurant-Style-Mixed-Veg-Gravy-1.jpg?resize=1024%2C683&ssl=1" alt="Mix Veg Curry">
+      <div class="food-name">Mix Veg Curry</div>
+    </a>
+    <a href="kadhaipaneer.html" class="food-card">
+      <img src="https://www.funfoodfrolic.com/wp-content/uploads/2020/12/Kadhai-Paneer-Thumbnail.jpg" alt="Kadhai Paneer">
+      <div class="food-name">Kadhai Paneer</div>
+    </a>
+    <a href="cholebhature.html" class="food-card">
+      <img src="https://2.bp.blogspot.com/-w4KOeWh0DXk/UA7pfsmVXhI/AAAAAAAARSk/qAOZ30Zy1AM/s1600/cb+five+s.jpg" alt="Chole Bhature">
+      <div class="food-name">Chole Bhature</div>
+    </a>
+    <a href="barfi.html" class="food-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.ZV0IJ0L57HdDe9rGO7QrmgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Barfi">
+      <div class="food-name">Barfi</div>
+    </a>
+    <a href="ladoo.html" class="food-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.7E_UkmICjz3QbfIlKkSL-AHaGm?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ladoo">
+      <div class="food-name">Ladoo</div>
+    </a>
+    <a href="peda.html" class="food-card">
+      <img src="https://cdnprod.mafretailproxy.com/sys-master-root/h14/h9a/11156246626334/1010873_main.jpg_480Wx480Hl" alt="Peda">
+      <div class="food-name">Peda</div>
+    </a>
+  </div>
+</body>
+</html>
